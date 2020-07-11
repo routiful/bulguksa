@@ -15,7 +15,9 @@ def main():
         pil_image = captured_image.raw_image
         pil_image = pil_image.resize((184, 96))
 
-        # Convert the image to the format used by the Screen
+        # pil_image.save('test.jpg')
+
+        Convert the image to the format used by the Screen
         print("Display image on Vector's face...")
         screen_data = anki_vector.screen.convert_image_to_screen_data(pil_image)
 
